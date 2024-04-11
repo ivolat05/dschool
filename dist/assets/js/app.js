@@ -296,7 +296,7 @@ const lightbox = GLightbox({
 const menu = () => {
 	const btn = document.querySelector(".header__menu-open");
 	const btnClose = document.querySelectorAll(".close-menu");
-	const menuWrapp = document.querySelector(".header__nav");
+	const menuWrapp = document.querySelector(".header__nav-back-mob");
 	const body = document.querySelector("body");
 	if (btn) {
 		if (menuWrapp) {

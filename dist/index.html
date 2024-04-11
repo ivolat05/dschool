@@ -121,42 +121,79 @@
 	</div>
 </header>
 		<main>
-
+			<section class="main">
+	<div class="container main-container">
+		<div class="main__wrapp">
+			<h1 class="main__title">
+				Летний
+				интенсив<br>
+				по английскому языку
+			</h1>
+			<p class="main__text">
+				Английский за 10 дней <br>
+				Для детей и подростков
+			</p>
+			<a href="#" data-open-modal="form-call" class="main__btn">
+				Записаться
+			</a>
+		</div>
+	</div>
+</section>
 		</main>
 
-		<div id="modal-test" class="modal__container-fon   modal-background">
-	<div class="modal__container">
-		<button class="modal-btn btn__modal--close">
+		<div id="form-call" class="modal__container-fon    modal-background">
+	<div class="modal__container modal__form-call modal___container-content">
+		<button type="button" class="modal-btn btn__modal--close">
 			<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M1 1L19.1421 19.1421" stroke="#151515" stroke-width="2" stroke-linecap="round" />
-				<path d="M1 19.1421L19.1421 0.999999" stroke="#151515" stroke-width="2" stroke-linecap="round" />
+				<path d="M1 1L19.1421 19.1421" stroke="#006fff" stroke-width="2" stroke-linecap="round" />
+				<path d="M1 19.1421L19.1421 0.999999" stroke="#006fff" stroke-width="2" stroke-linecap="round" />
 			</svg>
 		</button>
-
-		<h2 class="">
+		<h2 class="modal__form-title">
 			Запишитесь сейчас
 		</h2>
-		<p class="">
+		<p class="modal__form-text">
 			Заполните свои данные и мы вам перезвоним
 		</p>
-		<form class="">
-			<input type="text" placeholder="Ваше имя">
-			<input type="tel" placeholder="Номер телефона">
-
-			<button type="submit">
+		<form class="modal__form-form">
+			<input class="modal__form-input" type="text" placeholder="Ваше имя">
+			<div class="error__container">
+				Необходимо заполнить «Ваше имя».
+			</div>
+			<input class="modal__form-input" type="tel" placeholder="Номер телефона">
+			<div class="error__container">
+				Необходимо заполнить «Телефон».
+			</div>
+			<button type="submit" class="modal__form-btn" type="submit">
 				Отправить
 			</button>
 
 		</form>
-		<div class="">
+		<div class="modal__form-footer">
 			Нажимая на кнопку, вы даете согласие на обработку своих персональных
 			данных и соглашаетесь c
 			<a href="#">политикой
 				конфиденциальности</a>
 		</div>
-		<div class="">
-			Спасибо! В ближайшее время мы вам позвоним
-		</div>
+
+	</div>
+</div>
+
+
+<div id="form-call" class="modal__container-fon    modal-background">
+	<div class="modal__container modal__ok ">
+		<button type="button" class="modal-btn btn__modal--close">
+			<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M1 1L19.1421 19.1421" stroke="#006fff" stroke-width="2" stroke-linecap="round" />
+				<path d="M1 19.1421L19.1421 0.999999" stroke="#006fff" stroke-width="2" stroke-linecap="round" />
+			</svg>
+		</button>
+		<h3 class="modal__ok-title modal__form-title">
+			Спасибо!
+		</h3>
+		<p class="modal__ok-text modal__form-text">
+			В ближайшее время мы вам позвоним
+		</p>
 	</div>
 </div>
 	</div>

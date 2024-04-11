@@ -188,6 +188,13 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 @font-face {
+  font-family: "arialmt";
+  font-display: swap;
+  src: url("../../assets/fonts/arialmt.woff2") format("woff2"), url("../../assets/fonts/arialmt.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
   font-family: "TildaSans";
   font-display: swap;
   src: url("../../assets/fonts/TildaSans-Black.woff2") format("woff2"), url("../../assets/fonts/TildaSans-Black.woff") format("woff");
@@ -195,17 +202,10 @@ input[type=number]::-webkit-inner-spin-button {
   font-style: normal;
 }
 @font-face {
-  font-family: "TildaSans";
+  font-family: "arial_bolditalicmt";
   font-display: swap;
-  src: url("../../assets/fonts/TildaSans-ExtraBold.woff2") format("woff2"), url("../../assets/fonts/TildaSans-ExtraBold.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "TildaSans";
-  font-display: swap;
-  src: url("../../assets/fonts/TildaSans-Bold.woff2") format("woff2"), url("../../assets/fonts/TildaSans-Bold.woff") format("woff");
-  font-weight: 700;
+  src: url("../../assets/fonts/arial_bolditalicmt.woff2") format("woff2"), url("../../assets/fonts/arial_bolditalicmt.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
@@ -218,8 +218,8 @@ input[type=number]::-webkit-inner-spin-button {
 @font-face {
   font-family: "TildaSans";
   font-display: swap;
-  src: url("../../assets/fonts/TildaSans-Semibold.woff2") format("woff2"), url("../../assets/fonts/TildaSans-Semibold.woff") format("woff");
-  font-weight: 600;
+  src: url("../../assets/fonts/TildaSans-Bold.woff2") format("woff2"), url("../../assets/fonts/TildaSans-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
@@ -234,6 +234,20 @@ input[type=number]::-webkit-inner-spin-button {
   font-display: swap;
   src: url("../../assets/fonts/TildaSans-Regular.woff2") format("woff2"), url("../../assets/fonts/TildaSans-Regular.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TildaSans";
+  font-display: swap;
+  src: url("../../assets/fonts/TildaSans-Semibold.woff2") format("woff2"), url("../../assets/fonts/TildaSans-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TildaSans";
+  font-display: swap;
+  src: url("../../assets/fonts/TildaSans-ExtraBold.woff2") format("woff2"), url("../../assets/fonts/TildaSans-ExtraBold.woff") format("woff");
+  font-weight: 800;
   font-style: normal;
 }
 @font-face {
@@ -2042,6 +2056,7 @@ iframe.wait-autoplay {
   --blue: #006fff;
   --black: #000;
   --purple: #9200d6;
+  --jet-black: #030303;
   --dark-grey: rgb(54, 58, 64);
   --dark-red: #a94442;
   --electric-indigo-opacity-4: rgba(97, 0, 220, .4);
@@ -2985,5 +3000,137 @@ button {
   .main__btn:active {
     background: var(--blue);
     color: var(--white);
+  }
+}
+
+.interest {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  position: relative;
+  isolation: isolate;
+}
+@media (max-width: 1200px) {
+  .interest {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+@media (max-width: 992px) {
+  .interest {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 572px) {
+  .interest {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+
+.interest-title {
+  font-weight: 600;
+  color: var(--jet-black);
+  text-align: center;
+  font-size: 42px;
+}
+@media (max-width: 1200px) {
+  .interest-title {
+    font-size: 26px;
+  }
+}
+
+.interest-text {
+  font-family: "arialmt";
+  padding-top: 50px;
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+.interest-text span {
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  text-align: inherit;
+  color: var(--blue);
+}
+@media (max-width: 1200px) {
+  .interest-text {
+    font-size: 18px;
+    padding-top: 25px;
+  }
+}
+
+.interest-sutitle {
+  text-align: center;
+  font-family: "arialmt";
+  padding-top: 50px;
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .interest-sutitle {
+    font-size: 18px;
+    padding-top: 25px;
+  }
+}
+
+.interest__list {
+  padding-top: 50px;
+}
+@media (max-width: 1200px) {
+  .interest__list {
+    padding-top: 25px;
+  }
+}
+
+.interest__list-inner {
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--gray);
+  text-align: center;
+  padding-top: 10px;
+}
+.interest__list-inner:nth-child(1) {
+  padding-top: 0;
+}
+@media (max-width: 1200px) {
+  .interest__list-inner {
+    font-size: 24px;
+  }
+}
+
+.interest__list-inner.--blue {
+  color: var(--blue);
+}
+
+.interest__list-inner.--purple {
+  color: var(--purple);
+}
+
+.interst__back-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0.1;
+}
+@media (max-width: 992px) {
+  .interst__back-img {
+    width: 300px;
+  }
+}
+@media (max-width: 572px) {
+  .interst__back-img {
+    width: 70vw;
   }
 }

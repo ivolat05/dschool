@@ -236,6 +236,42 @@ const reviewsSwiperText = () => {
 
 reviewsSwiperText();
 
+const teachersSwiper = () => {
+	const teachersWrapper = document.querySelector(".teachers__swiper");
+	const installSwiper = {
+		spaceBetween: 40,
+		slidesPerView: 4,
+		loop: true,
+		navigation: {
+			nextEl: ".teachers__btn-next",
+			prevEl: ".teachers__btn-prev",
+		},
+		breakpoints: {
+			320: {
+				spaceBetween: 10,
+				slidesPerView: 1,
+			},
+			572: {
+				spaceBetween: 40,
+				slidesPerView: 2,
+			},
+			992: {
+				spaceBetween: 20,
+				slidesPerView: 4,
+			},
+			1200: {
+				spaceBetween: 40,
+				slidesPerView: 4,
+			},
+		},
+	};
+	if (teachersWrapper) {
+		const swiperTeachers = new Swiper(teachersWrapper, installSwiper);
+	}
+};
+
+teachersSwiper();
+
 //fixed menu
 function fixedMenu() {
 	const header = document.querySelector(".header__fixed");

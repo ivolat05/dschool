@@ -2840,6 +2840,11 @@ button {
   }
 }
 
+.header__nav-link.--active {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
 .header__nav-back-mob {
   width: 100%;
 }
@@ -3062,6 +3067,14 @@ button {
     border: 2px solid var(--blue);
     background: var(--blue);
   }
+}
+
+.header-fixed {
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: var(--box-shadow-2);
+          box-shadow: var(--box-shadow-2);
 }
 
 .main {

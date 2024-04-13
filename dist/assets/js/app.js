@@ -251,13 +251,13 @@ const teachersSwiper = () => {
 				spaceBetween: 10,
 				slidesPerView: 1,
 			},
-			572: {
+			768: {
 				spaceBetween: 40,
 				slidesPerView: 2,
 			},
 			992: {
 				spaceBetween: 20,
-				slidesPerView: 4,
+				slidesPerView: 3,
 			},
 			1200: {
 				spaceBetween: 40,

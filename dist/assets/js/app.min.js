@@ -372,3 +372,18 @@ const tab = () => {
 };
 tab();
 
+const dellBlock = () => {
+	const btnDell = document.querySelectorAll(".block--fixed-btn");
+	if (btnDell) {
+		btnDell.forEach((item) => {
+			item.addEventListener("click", () => {
+				let block = item.closest(".block--fixed");
+				if (block) {
+					block.remove();
+				}
+			});
+		});
+	}
+};
+dellBlock();
+

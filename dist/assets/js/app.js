@@ -272,6 +272,57 @@ const teachersSwiper = () => {
 
 teachersSwiper();
 
+const otherSwiper = () => {
+	const otherWrapperTop = document.querySelector(".other__swiper-top");
+	const otherWrapperBottom = document.querySelector(".other__swiper-bottom");
+
+	if (otherWrapperTop) {
+		const swiperBottom = new Swiper(otherWrapperBottom, {
+			spaceBetween: 10,
+			slidesPerView: 10,
+			freeMode: true,
+			watchSlidesProgress: true,
+			breakpoints: {
+				320: {
+					spaceBetween: 10,
+					slidesPerView: 4,
+				},
+
+				992: {
+					spaceBetween: 10,
+					slidesPerView: 5,
+				},
+				1400: {
+					spaceBetween: 10,
+					slidesPerView: 10,
+				},
+			},
+		});
+		const swiperTop = new Swiper(otherWrapperTop, {
+			spaceBetween: 10,
+			allowTouchMove: false,
+			navigation: {
+				nextEl: ".other__swiper-btn-next",
+				prevEl: ".other__swiper-btn-prev",
+			},
+			thumbs: {
+				swiper: swiperBottom,
+			},
+			breakpoints: {
+				320: {
+					allowTouchMove: false,
+				},
+
+				992: {
+					allowTouchMove: true,
+				},
+			},
+		});
+	}
+};
+
+otherSwiper();
+
 //fixed menu
 function fixedMenu() {
 	const header = document.querySelector(".header__fixed");
@@ -295,4 +346,29 @@ function fixedMenu() {
 	}
 }
 fixedMenu();
+
+const tab = () => {
+	const btn = document.querySelectorAll(".other-btn");
+	if (btn) {
+		btn.forEach((item) => {
+			item.addEventListener("click", () => {
+				let tabWrap = document.querySelectorAll(".other__tab");
+				let dataTab = item.getAttribute("data-tab");
+				let id = document.getElementById(dataTab);
+
+				if (tabWrap) {
+					tabWrap.forEach((t) => {
+						t.classList.remove("--active");
+					});
+					btn.forEach((b) => {
+						b.classList.remove("--active");
+					});
+					item.classList.add("--active");
+					id.classList.add("--active");
+				}
+			});
+		});
+	}
+};
+tab();
 

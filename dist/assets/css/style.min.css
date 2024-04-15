@@ -3087,6 +3087,11 @@ button {
     background: url("../../assets/img/main.webp") no-repeat right 60% center/cover;
   }
 }
+@media (max-width: 572px) {
+  .main {
+    background: url("../../assets/img/main-mob.webp") no-repeat center center/cover;
+  }
+}
 
 .main-container {
   height: 100%;
@@ -3115,6 +3120,14 @@ button {
             justify-content: flex-start;
   }
 }
+@media (max-width: 572px) {
+  .main__wrapp {
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+  }
+}
 
 .main__title {
   font-weight: 700;
@@ -3132,9 +3145,10 @@ button {
     font-size: 38px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 572px) {
   .main__title {
-    font-size: 26px;
+    font-size: 33px;
+    line-height: 38px;
   }
 }
 
@@ -3154,9 +3168,10 @@ button {
     font-size: 18px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 572px) {
   .main__text {
-    font-size: 14px;
+    font-size: 17px;
+    line-height: 26px;
   }
 }
 
@@ -3197,6 +3212,15 @@ button {
     width: 232px;
     height: 55px;
     margin-top: 60px;
+  }
+}
+@media (max-width: 572px) {
+  .main__btn {
+    margin-top: auto;
+    margin-bottom: 0;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (hover: hover) {
